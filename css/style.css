@@ -1,0 +1,25 @@
+html,
+body {
+    height: 100%;
+    max-width: 100%;
+}
+
+html {
+    background-color: black;
+}
+
+#bg {
+    background: url("/css/DSC_1227.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+p {
+    text-indent: 50px;
+}
