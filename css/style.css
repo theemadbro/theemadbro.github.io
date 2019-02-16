@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
     max-width: 100%;
+    font-size: 1rem;
 }
 
 html {
@@ -22,4 +23,8 @@ html {
 
 p {
     text-indent: 50px;
+}
+
+.bg-dimmer {
+    background: rgba(0, 0, 0, 0.65)
 }
