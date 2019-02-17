@@ -21,10 +21,31 @@ html {
     min-height: 100vh;
 }
 
-p {
-    text-indent: 50px;
-}
-
 .bg-dimmer {
     background: rgba(0, 0, 0, 0.65)
+}
+
+.container .project-title {
+    width: 95%;
+    min-height: 100%;
+    padding-top: 12px;
+}
+
+.container .project-info {
+    width: 95%;
+    min-height: 100%;
+}
+
+.title-info{
+    align-self: end;
+}
+
+.info-spacer {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.photos {
+    width: 250px;
+    height: 250px;
+    
 }
