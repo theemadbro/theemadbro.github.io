@@ -44,8 +44,18 @@ html {
     margin-top: 25px;
     margin-bottom: 25px;
 }
-.photos {
-    width: 250px;
-    height: 250px;
-    
+.thumb-photo {
+    width: 265px; 
+    cursor: pointer;   
+}
+.full-photo {
+    width: 100%;
+}
+
+.modal-dialog {
+    max-width: 85%;
+}
+
+footer {
+    padding-right: 0 !important;
 }
