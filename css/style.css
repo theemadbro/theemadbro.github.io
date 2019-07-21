@@ -22,7 +22,11 @@ html {
 }
 
 .bg-dimmer {
-    background: rgba(0, 0, 0, 0.65)
+    background: rgba(0, 0, 0, 0.70)
+}
+
+.bar-dimmer {
+    background: rgba(0, 0, 0, 0.95)
 }
 
 .container .project-title {
@@ -36,6 +40,22 @@ html {
     min-height: 100%;
 }
 
+.container .content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: white;
+}
+
+.container .photo-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-height: 75%;
+}
+
 .title-info{
     align-self: end;
 }
@@ -45,8 +65,9 @@ html {
     margin-bottom: 25px;
 }
 .thumb-photo {
-    width: 265px; 
-    cursor: pointer;   
+    width: 250px; 
+    cursor: pointer;
+    border-radius: 1rem;
 }
 .full-photo {
     width: 100%;
@@ -58,4 +79,19 @@ html {
 
 footer {
     padding-right: 0 !important;
+}
+
+.carousel .carousel-control-next-icon, .carousel .carousel-control-prev-icon {
+    width: 75px;
+    height: 75px;
+    background-color: rgba(100, 120, 120, 0.5);
+    border-radius: 40px;
+}
+
+.modal-dialog .modal-content {
+    border-radius: .25rem;
+}
+
+.home_pic {
+    border-radius: 200px;
 }
