@@ -2,61 +2,83 @@
 layout: default
 title: Photography
 ---
-<div class="py-5 mx-3 mx-sm-0">
-    <div class="modal fade bg-dimmer" id="large_picture" role="img" >
-        <div class="modal-dialog modal-dialog-centered mx-auto">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div id="carousel-content" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <img id="full-photo-id" src="" alt="" class="full-photo mx-auto">
-                        </div>
-                        <a class="carousel-control-prev" href="/" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="/" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+
+<div class="photo-content text-center">
+    <div class="photos d-inline zoom">
+        <img src="DSC_0013.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
+    </div>
+    <div class="photos d-inline zoom">
+        <img src="DSC_0098.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
+    </div>
+    <div class="photos d-inline zoom">
+        <img src="DSC_0417.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
+    </div>
+    <div class="photos d-inline zoom">
+        <img src="DSC_0548-2.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
+    </div>
+    <div class="photos d-inline zoom">
+        <img src="DSC_1235.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
+    </div>
+    <div class="photos d-inline zoom">
+        <img src="DSC_1436.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
+    </div>
+    <div class="photos d-inline zoom">
+        <img src="DSC_1666.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
+    </div>
+    <div class="photos d-inline zoom">
+        <img src="DSC_2729.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
+    </div>
+    <div class="photos d-inline zoom">
+        <img src="DSC_2893.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
+    </div>
+    <div class="photos d-inline zoom">
+        <img src="DSC_2931.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
+    </div>
+    <div class="photos d-inline zoom">
+        <img src="DSC_3001.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
+    </div>
+</div>
+
+<div class="modal fade bg-dimmer" id="large_picture">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="carousel-content" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <img id="full-photo-id" src="" alt="" class="img-fluid">
                     </div>
+                    <a class="carousel-control-prev" href="/" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="/" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="text-center container photo-content bg-dimmer">
-        <div class="photos d-inline">
-            <img src="DSC_0013.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
-        </div>
-        <div class="photos d-inline">
-            <img src="DSC_0098.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo" id="">
-        </div>
-        <div class="photos d-inline">
-            <img src="DSC_0417.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
-        </div>
-        <div class="photos d-inline">
-            <img src="DSC_0548-2.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
-        </div>
-        <div class="photos d-inline">
-            <img src="DSC_1235.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
-        </div>
-        <div class="photos d-inline">
-            <img src="DSC_1436.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
-        </div>
-        <div class="photos d-inline">
-            <img src="DSC_1666.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
-        </div>
-        <div class="photos d-inline">
-            <img src="DSC_2729.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
-        </div>
-        <div class="photos d-inline">
-            <img src="DSC_2893.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
-        </div>
-        <div class="photos d-inline">
-            <img src="DSC_2931.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
-        </div>
-        <div class="photos d-inline">
-            <img src="DSC_3001.jpg" alt="" data-toggle="modal" data-target="#large_picture" class="m-2 thumb-photo">
+</div>
+
+<!-- <div class="modal fade bg-dimmer" id="large_picture" role="img">
+    <div class="modal-dialog modal-dialog-centered mx-auto">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="carousel-content" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <img id="full-photo-id" src="" alt="" class="img-fluid">
+                    </div>
+                    <a class="carousel-control-prev" href="/" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="/" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</div> -->

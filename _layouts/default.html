@@ -1,71 +1,93 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{ page.title }}</title>
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Bootstrap core CSS -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Material Design Bootstrap -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.15/css/mdb.min.css" rel="stylesheet">
-        <!-- link to main stylesheet -->
-        <link href="../css/style.css" rel="stylesheet" >
-        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    </head>
-    <body>
-        <!--NAV-->
-        <header>
-            <nav class="navbar navbar-expand-md navbar-dark bar-dimmer fixed-top scrolling-navbar">
-                <a class="navbar-brand" href="/">Kevin Capotosto</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbar">
-                    <ul class="navbar-nav">
-                        <li {% if page.url == "/about/" %}class="nav-item active"{% endif %} class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                        <li {% if page.url == "/projects/" %}class="nav-item active"{% endif %} class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
-                        <li {% if page.url == "/photography/" %}class="nav-item active"{% endif %} class="nav-item"><a class="nav-link" href="/photography">Photos</a></li>
-                        <li {% if page.url == "/cv/" %}class="nav-item active"{% endif %} class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!--NAV-->
-        <!--Pages go here-->
-        <main id="bg" class="">
-            <div class="mask rgba-black-strong">
-                <div class="container justify-content-center d-flex">
-                    <div class="row d-flex my-5">
-                        {{ content }}
-                    </div>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ page.title }}</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.15/css/mdb.min.css" rel="stylesheet">
+    <!-- link to main stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!--NAV-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bar-dimmer fixed-top scrolling-navbar">
+            <a class="navbar-brand" href="/">Kevin Capotosto</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li {% if page.url=="/about/" %}class="nav-item active" {% endif %} class="nav-item"><a
+                            class="nav-link" href="/about">About</a></li>
+                    <li {% if page.url=="/projects/" %}class="nav-item active" {% endif %} class="nav-item"><a
+                            class="nav-link" href="/projects">Projects</a></li>
+                    <li {% if page.url=="/photography/" %}class="nav-item active" {% endif %} class="nav-item"><a
+                            class="nav-link" href="/photography">Photos</a></li>
+                    <li {% if page.url=="/cv/" %}class="nav-item active" {% endif %} class="nav-item"><a
+                            class="nav-link" href="/cv">CV</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--NAV-->
+    <!--Pages go here-->
+    <main id="bg">
+        <div class="mask rgba-black-strong ">
+            <div class="main-spacer justify-content-center">
+                <div class="main-container container bg-dimmer">
+                    {{ content }}
                 </div>
             </div>
-        </main>
-        <!--Pages go here-->
-        <!--FOOTER-->
-        <footer class="page-footer font-small bar-dimmer fixed-bottom">
-            <div class="container-fluid text-center py-3">
-                <div class="row d-flex mx-auto">
-                    <div class="col- mx-auto"><a href="mailto:kevin.capotosto@gmail.com">EMAIL</a></div>
-                    <div class="col- mx-auto"><a href="https://github.com/theemadbro">GITHUB</a></div>
-                    <div class="col- mx-auto"><a href="https://www.linkedin.com/in/kevin-capotosto-045824149/">LINKEDIN</a></div>
+        </div>
+    </main>
+    <!--Pages go here-->
+    <!--FOOTER-->
+    <footer class="page-footer font-small bar-dimmer fixed-bottom">
+        <div class="container-fluid text-center py-3">
+            <div class="row d-flex mx-auto">
+                <div class="col- mx-auto"><a href="mailto:kevin.capotosto@gmail.com">EMAIL</a></div>
+                <div class="col- mx-auto"><a href="https://github.com/theemadbro">GITHUB</a></div>
+                <div class="col- mx-auto"><a href="https://www.linkedin.com/in/kevin-capotosto-045824149/">LINKEDIN</a>
                 </div>
             </div>
-        </footer>
+        </div>
         <!--FOOTER-->
         <!-- JQuery -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
         <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.15/js/mdb.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
         <!--SCRIPTS-->
         <script src="../js/main.js"></script>
-    </body>
+    </footer>
+
+    <div id="breakpoint-visualizer">
+        <div class="d-block d-sm-none">Extra Small (xs)</div>
+        <div class="d-none d-sm-block d-md-none">Small (sm)</div>
+        <div class="d-none d-md-block d-lg-none">Medium (md)</div>
+        <div class="d-none d-lg-block d-xl-none">Large (lg)</div>
+        <div class="d-none d-xl-block d-xxl-none">X-Large (xl)</div>
+        <div class="d-none d-xxl-block">XX-Large (xxl)</div>
+    </div>
+
+</body>
+
 </html>
